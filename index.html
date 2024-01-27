@@ -4,72 +4,145 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KD Portfolio</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 <body>
-
-    <!-- Barre de navigation -->
+<!-- Barre de navigation -->
+    <header>
     <nav>
-        <img src="picture/Capture d’écran (7).png" alt="logo" width="40" height="40">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#work">work</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
+        <nav class="py-2 bg-body-tertiary border-bottom">
+            
+            <div class="container d-flex flex-wrap">
+                <img src="picture/Capture d’écran (7).png" alt="logo" width="40" height="40">
+              <ul class="nav me-auto">
+                
+                <li class="nav-item"><a href="#home" class="nav-link link-body-emphasis px-2">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link link-body-emphasis px-2">About</a></li>
+                <li class="nav-item"><a href="#resume" class="nav-link link-body-emphasis px-2">Resume</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link link-body-emphasis px-2">contact</li>
+              </ul>
+              
+            </div>
+          
+</header>
+<h1 class="display-1">Kader D.</h1>
     <!-- Section "À propos" -->
     <section id="about">
-        <h2>À propos de moi</h2>
-        <p>Je suis Abdoul Kader Diomandé, étudiant en première année de droit et informatique.
-            <br>Je suis un développeur web passionné par la création de solutions innovantes.
-            <br>L'informatique est pour moi un domaine fascinant.
-            <br>Ça l'est devenu encore après ma découverte du développement web.
-            <br>Grande fut ma fascination face au mécanisme derrière la création de site web et d'application.
-            <br>De plus, au vue de la place qu'occupe l'informatique en général,
-            <br>il est plus que nécessaire de s'y connaitre ne serait-ce qu'un tout petit peu.
-            <br>c'est ainsi que commence mes premier pas vers le développement web.</p>
-           <div> <br><strong>C'est quoi le développement web ?</strong>
-            <br><iframe width="500" height="200" src="https://www.youtube.com/embed/UOn8kLLA508" title="Découvrir le Développement Web" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
-    </section>
+        <!-- START THE FEATURETTES -->
+        
+            <hr class="featurette-divider">
+        
+            <div class="row featurette">
+              <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1">À propos de moi </h2>
+                <p class="lead">Je suis Abdoul Kader Diomandé, étudiant en première année de droit et informatique.
+                    <br>Je suis un développeur web passionné par la création de solutions innovantes.
+                    <br>L'informatique est pour moi un domaine fascinant.
+                    <br>Ça l'est devenu encore après ma découverte du développement web.
+                    <br>Grande fut ma fascination face au mécanisme derrière la création de site web et d'application.
+                    <br>De plus, au vue de la place qu'occupe l'informatique en général,
+                    <br>il est plus que nécessaire de s'y connaitre ne serait-ce qu'un tout petit peu.
+                    <br>c'est ainsi que commence mes premier pas vers le développement web.</p>
+              </div>
+              <div class="col-md-5 order-md-1">
+                <img src="picture/me.png" alt="photo de moi" width="500" height="300">
+            </div>
+              </div>
+        
+            <hr class="featurette-divider">
+        
+            <div class="row featurette">
+              <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading fw-normal lh-1">C'est quoi le développement web ? </h2>
+                <p class="lead">Le développement Web est le travail nécessaire au développement d'un site Web pour Internet ou un intranet.</p>
+              </div>
+              <div class="col-md-5 order-md-1">
+              <iframe width="500" height="200" src="https://www.youtube.com/embed/UOn8kLLA508" title="Découvrir le Développement Web" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><rect width="100%" height="100%" fill="var(--bs-secondary-bg)">
+              </div>
+            </div>
+          <!-- /END THE FEATURETTES -->
 
-    <!-- Section "Travail" -->
-    <section id="work">
-        <h2>Mon Travail</h2>
-        <img src="picture/Capture d’écran (9).jpg" alt="ligne de code" width="600" height="500">
-        <img src="picture/Capture d’écran (8).png" alt="résultat de la ligne de code" width="600" height="500">
-    </section>
+          <hr class="featurette-divider">
 
-    <!-- Section "CV" -->
+             <!-- Section "CV" -->
     <section id="resume">
-        <h2>Mon CV</h2>
-        <img src="picture/cv1.png" alt="image d'un cv" width="500" height="400">
-        <img src="picture/cv2.png" alt="image d'un cv"width="500" height="400">
-    </section>
+        <h2>Curriculum vitae</h2>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      information personnelle
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                     Compétences
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Cours
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  </div>
+                </div>
+              </div>
+        
+          <hr>
+
+   
 
     <!-- Section "Contact" -->
-    <section id="contact">
-        <h2>Contactez-moi</h2>
-        <a href="mailto:abdoulkaderdiomande321@gmail.com">abdoulkaderdiomande321@gmail.com</a>
+   <center> <section id="contact">
+       <div><h2>Contactez-moi</h2>
+        <a href="mailto:abdoulkaderdiomande321@gmail.com">abdoulkaderdiomande321@gmail.com</a></div> 
     </section>
 <!--section"avis et suggestion"-->
 <section>
     <div>
        <h3>laissez un commentaire</h3> 
        <form>
-            <label for="message">Votre message :</label><br>
-            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+            
+            <textarea id="message" name="message" rows="4" cols="50" required>veuillez entrer votre message...</textarea><br>
 
-            <input type="submit" value="Envoyer message">
+            <input type="submit" value="soumettre"  class="btn btn-secondary rounded-pill px-3">
         </form>
+        
     </div>
-</section>
+</section></center>
     <!-- Pied de page -->
-    <footer>
-        <p>&copy;  KD Portfolio. </p>
-        <p>Rejoignez-moi sur Facebook : <a href="https://www.facebook.com/profile.php?id=61555396178746&locale=fr_FR" target="_blank">Ma Page Facebook</a></p>
-    </footer>
+   
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+              <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                  <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+                </a>
+                <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Company, Inc</span>
+              </div>
+          
+              <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+              </ul>
+            </footer>
+          </div>
+        
+
 
 </body>
 </html>
